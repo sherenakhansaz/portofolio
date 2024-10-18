@@ -1,0 +1,483 @@
+/* Custom styles for better visual appeal */
+body {
+    background-color: #ececec;
+    font-family: 'Arial', sans-serif;
+}
+
+.navbar {
+    background-color: #ff8fb1;
+    /* Soft pink for navbar */
+}
+
+.navbar-brand,
+.nav-link {
+    color: rgb(255, 255, 255) !important;
+
+}
+
+.nav-link:hover {
+    color: #fff2f2 !important;
+}
+
+.navbar-nav .nav-item .nav-link.active {
+    color: #ff4081;
+    /* Ubah warna link saat aktif (pink cerah) */
+    font-weight: bold;
+    /* Tambahkan penekanan dengan huruf tebal */
+    transition: color 0.3s ease;
+    /* Transisi perubahan warna */
+}
+
+/* Styling saat di-hover */
+.navbar-nav .nav-item .nav-link:hover {
+    color: #e91e63;
+    /* Warna saat hover (pink lebih gelap) */
+}
+
+/* Styling untuk background navbar saat di-scroll */
+.navbar-scrolled {
+    background-color: rgba(255, 64, 129, 0.8);
+    /* Warna pink transparan saat di-scroll */
+    transition: background-color 0.3s ease;
+}
+
+/* Dropdown Menu Styling */
+.nav-item.dropdown .dropdown-toggle {
+    color: white;
+}
+
+.nav-item.dropdown .dropdown-menu {
+    background-color: #ffe4e8df;
+    /* Warna latar dropdown */
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-menu .dropdown-item {
+    color: #333;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: #fda4bec0;
+    /* Warna hover dropdown item */
+    color: white;
+}
+
+/* Hover Effect on Dropdown */
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+/* Styling Section About */
+.about-section {
+    /* Background ringan untuk kontras */
+    padding: 50px 0;
+    background-color: #fde9ef;
+    border-bottom: 1px solid #fda4bec0;
+}
+
+.about-img-container {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.about-img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.about-img-container:hover .about-img {
+    transform: scale(1.1);
+    /* Efek Zoom */
+}
+
+.about-section p {
+    font-size: 1.1rem;
+    color: #333;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+/* Styling Section Contact */
+
+#contact {
+    border-radius: 20px;
+    background-color: #fff6f8eb;
+    border: 1px solid #af98af8d;
+    box-shadow: 2px 2px #a2a2a22b;
+}
+
+.btn-outline-dark {
+    border: 1px solid #af98af8d;
+}
+
+form {
+    background-color: #f8f9fa;
+    /* Latar belakang yang lembut */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    /* Efek bayangan untuk kedalaman */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Efek transisi saat hover */
+}
+
+form:hover {
+    transform: scale(1.02);
+    /* Efek zoom ringan saat hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    /* Bayangan lebih besar saat hover */
+}
+
+.form-label {
+    font-weight: bold;
+    color: #ff8fb1;
+    /* Warna pink untuk label sesuai tema */
+    letter-spacing: 1px;
+}
+
+.form-control {
+    border: 2px solid #ff8fb1;
+    /* Border pink yang lebih tegas */
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    /* Efek transisi pada fokus */
+}
+
+.form-control:focus {
+    border-color: #ff5576;
+    /* Border lebih terang saat fokus */
+    box-shadow: 0 4px 8px rgba(255, 85, 118, 0.2);
+    /* Tambahkan bayangan saat fokus */
+}
+
+.btn-pink {
+    background-color: #ff8fb1;
+    /* Warna tombol pink sesuai tema */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    /* Bentuk bulat untuk tombol */
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-pink:hover {
+    background-color: #ff5576;
+    /* Warna lebih terang saat hover */
+    transform: scale(1.05);
+    /* Efek zoom saat hover */
+    box-shadow: 0 6px 12px rgba(255, 85, 118, 0.3);
+    /* Tambahkan bayangan saat hover */
+}
+
+
+.social-title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    /* Tambahkan kapitalisasi */
+    letter-spacing: 2px;
+    /* Spasi antar huruf */
+    color: #ff8fb1;
+    /* Warna yang sesuai dengan tema footer */
+    margin-bottom: 20px;
+    /* Jarak bawah judul */
+}
+
+.social-icons a {
+    border-radius: 50%;
+    width: 60px;
+    /* Sedikit diperbesar */
+    height: 60px;
+    background-color: #ffffff;
+    /* Background tetap putih */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    /* Hitam agar kontras */
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    /* Tambahkan transisi bayangan */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Tambahkan bayangan untuk efek kedalaman */
+}
+
+.social-icons a:hover {
+    background-color: #ff8fb1;
+    /* Warna latar saat hover */
+    color: #ffffff;
+    /* Ubah warna icon menjadi putih */
+    transform: scale(1.2);
+    /* Efek zoom icon yang lebih besar */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    /* Bayangan lebih tajam saat hover */
+}
+
+.social-icons i {
+    font-size: 1.6rem;
+    /* Sedikit perbesar icon */
+}
+
+.social-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    /* Jarak antar item */
+}
+
+
+
+
+/* Animasi pada Icon Media Sosial */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.social-icons a:hover i {
+    animation: bounce 0.5s;
+}
+
+
+
+/* Styling tombol untuk section Blog */
+#contact .btn-pink {
+    background-color: #ffbad1;
+    /* Warna pink cerah */
+    border-color: #ffbad1;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    /* Transisi efek halus */
+}
+
+#contact .btn-pink:hover {
+    background-color: #ff8cb2;
+    /* Warna pink lebih gelap saat hover */
+    border-color: #ff8cb2;
+    transform: scale(1.05);
+    /* Efek zoom kecil saat hover */
+}
+
+
+.section-title {
+    padding-top: 20px;
+    color: #ff8fb1;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+#portfolio {
+    padding: 50px 0;
+}
+
+.portfolio-item {
+    transition: transform 0.3s;
+}
+
+.portfolio-item:hover {
+    transform: scale(1.05);
+}
+
+.footer {
+    background-color: #ff8fb1;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+
+}
+
+#skills {
+    background-color: #f8f9fa;
+    /* Latar belakang ringan untuk kontras */
+    padding: 20px;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: #ff8fb1;
+    /* Warna utama yang menarik */
+    font-weight: bold;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    width: 60px;
+    height: 5px;
+    background-color: #ff5576;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.skill-item {
+    margin-bottom: 30px;
+}
+
+.skill-title {
+    font-size: 1.25rem;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.progress {
+    height: 30px;
+    background-color: #e9ecef;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.1);
+    /* Bayangan dalam */
+}
+
+.progress-bar {
+    background-color: #ff8fb1;
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 30px;
+    color: white;
+    border-radius: 15px 0 0 15px;
+    transition: width 1s ease-in-out;
+    /* Animasi smooth pada progress */
+}
+
+.skill-item:hover .progress-bar {
+    width: calc(var(--skill-level) + 10%);
+    /* Tambahkan efek saat hover */
+}
+
+.skill-item:hover .progress-bar[aria-valuenow="100"] {
+    width: 100%;
+    /* Maksimal efek hover untuk skill penuh */
+}
+
+.skill-item:hover .progress-bar[aria-valuenow="80"] {
+    width: 90%;
+    /* Tambahkan 10% saat hover */
+}
+
+.skill-item:hover .progress-bar[aria-valuenow="90"] {
+    width: 100%;
+}
+
+.skill-item:hover .progress-bar[aria-valuenow="70"] {
+    width: 80%;
+}
+
+.skill-item:hover .progress-bar[aria-valuenow="75"] {
+    width: 85%;
+}
+
+.col-md-6 h4 {
+    color: #ff5576;
+    /* Warna teks menarik untuk heading */
+    margin-bottom: 20px;
+}
+
+.col-md-6 p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+    .progress-bar {
+        font-size: 0.9rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+}
+
+
+
+/* Service Card Styling */
+.service-card {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.service-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-10px);
+}
+
+.service-icon {
+    font-size: 3rem;
+    color: #ff8fb1;
+}
+
+.service-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.service-description {
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Section Spacing */
+#services {
+    padding: 60px 0;
+}
+
+#services p, #contact p, #portfolio p, #blog p {
+    font-size: 1rem;
+    color: #7b7b7b;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding-top: 72px;
+        padding-left: 12px;
+    }
+
+    .about-section {
+        padding: 20px;
+    }
+
+    #contact {
+        padding: 30px 0;
+    }
+
+    .progress-bar {
+        text-align: left;
+        padding-left: 10px;
+    }
+
+    .section-title {
+        font-size: 2.5rem;
+    }
+
+}
