@@ -460,7 +460,6 @@ form:hover {
 @media (max-width: 768px) {
     body {
         padding-top: 72px;
-        padding-left: 12px;
     }
 
     .about-section {
